@@ -1,0 +1,126 @@
+{
+  "common_medications": [
+    {
+      "name": "Lisinopril",
+      "class": "ACE Inhibitor",
+      "common_dosages": ["5mg", "10mg", "20mg", "40mg"],
+      "common_frequency": "Once daily",
+      "common_uses": ["Hypertension", "Heart Failure", "Post-MI"],
+      "side_effects": ["Dry cough", "Dizziness", "Headache", "Elevated potassium levels"],
+      "contraindications": ["Pregnancy", "History of angioedema", "Bilateral renal artery stenosis"]
+    },
+    {
+      "name": "Atorvastatin",
+      "class": "Statin",
+      "common_dosages": ["10mg", "20mg", "40mg", "80mg"],
+      "common_frequency": "Once daily",
+      "common_uses": ["Hyperlipidemia", "Cardiovascular disease prevention"],
+      "side_effects": ["Muscle pain", "Liver enzyme elevation", "Headache", "GI disturbances"],
+      "contraindications": ["Active liver disease", "Pregnancy", "Breastfeeding"]
+    },
+    {
+      "name": "Metformin",
+      "class": "Biguanide",
+      "common_dosages": ["500mg", "850mg", "1000mg"],
+      "common_frequency": "Once or twice daily",
+      "common_uses": ["Type 2 Diabetes", "Insulin resistance", "PCOS"],
+      "side_effects": ["GI disturbances", "Metallic taste", "Vitamin B12 deficiency"],
+      "contraindications": ["Renal impairment", "Metabolic acidosis", "Severe infection"]
+    },
+    {
+      "name": "Levothyroxine",
+      "class": "Thyroid hormone",
+      "common_dosages": ["25mcg", "50mcg", "75mcg", "88mcg", "100mcg", "112mcg", "125mcg", "150mcg"],
+      "common_frequency": "Once daily",
+      "common_uses": ["Hypothyroidism", "Thyroid hormone replacement"],
+      "side_effects": ["Palpitations", "Nervousness", "Insomnia", "Weight loss"],
+      "contraindications": ["Thyrotoxicosis", "Acute myocardial infarction", "Uncorrected adrenal insufficiency"]
+    },
+    {
+      "name": "Amlodipine",
+      "class": "Calcium Channel Blocker",
+      "common_dosages": ["2.5mg", "5mg", "10mg"],
+      "common_frequency": "Once daily",
+      "common_uses": ["Hypertension", "Angina"],
+      "side_effects": ["Peripheral edema", "Headache", "Flushing", "Dizziness"],
+      "contraindications": ["Severe hypotension", "Heart block", "Severe aortic stenosis"]
+    },
+    {
+      "name": "Omeprazole",
+      "class": "Proton Pump Inhibitor",
+      "common_dosages": ["10mg", "20mg", "40mg"],
+      "common_frequency": "Once daily",
+      "common_uses": ["GERD", "Peptic ulcer disease", "H. pylori eradication"],
+      "side_effects": ["Headache", "Diarrhea", "Abdominal pain", "Vitamin B12 deficiency"],
+      "contraindications": ["Hypersensitivity to PPIs"]
+    },
+    {
+      "name": "Sertraline",
+      "class": "SSRI",
+      "common_dosages": ["25mg", "50mg", "100mg", "200mg"],
+      "common_frequency": "Once daily",
+      "common_uses": ["Depression", "Anxiety disorders", "PTSD", "OCD"],
+      "side_effects": ["Nausea", "Insomnia", "Sexual dysfunction", "Dizziness"],
+      "contraindications": ["MAO inhibitor use within 14 days", "Pimozide use"]
+    },
+    {
+      "name": "Albuterol",
+      "class": "Short-acting beta-agonist",
+      "common_dosages": ["90mcg/puff", "2.5mg/3mL nebulizer solution"],
+      "common_frequency": "As needed",
+      "common_uses": ["Asthma", "COPD", "Bronchospasm"],
+      "side_effects": ["Tremor", "Tachycardia", "Nervousness", "Headache"],
+      "contraindications": ["Hypersensitivity to albuterol"]
+    },
+    {
+      "name": "Hydrochlorothiazide",
+      "class": "Thiazide diuretic",
+      "common_dosages": ["12.5mg", "25mg", "50mg"],
+      "common_frequency": "Once daily",
+      "common_uses": ["Hypertension", "Edema"],
+      "side_effects": ["Electrolyte imbalances", "Hyperglycemia", "Hyperuricemia", "Photosensitivity"],
+      "contraindications": ["Anuria", "Sulfonamide allergy"]
+    },
+    {
+      "name": "Warfarin",
+      "class": "Anticoagulant",
+      "common_dosages": ["1mg", "2mg", "2.5mg", "3mg", "4mg", "5mg", "6mg", "7.5mg", "10mg"],
+      "common_frequency": "Once daily",
+      "common_uses": ["Atrial fibrillation", "DVT/PE treatment and prevention", "Mechanical heart valves"],
+      "side_effects": ["Bleeding", "Bruising", "Necrosis", "Purple toe syndrome"],
+      "contraindications": ["Active bleeding", "Severe liver disease", "Pregnancy"]
+    }
+  ],
+  "interactions": [
+    {
+      "medications": ["Warfarin", "NSAIDs"],
+      "severity": "Major",
+      "effect": "Increased risk of bleeding",
+      "recommendation": "Avoid combination if possible"
+    },
+    {
+      "medications": ["ACE Inhibitors", "Potassium supplements"],
+      "severity": "Moderate",
+      "effect": "Hyperkalemia",
+      "recommendation": "Monitor potassium levels"
+    },
+    {
+      "medications": ["Statins", "Macrolide antibiotics"],
+      "severity": "Moderate",
+      "effect": "Increased risk of myopathy and rhabdomyolysis",
+      "recommendation": "Consider dose reduction or temporary discontinuation of statin"
+    },
+    {
+      "medications": ["SSRIs", "NSAIDs"],
+      "severity": "Moderate",
+      "effect": "Increased risk of GI bleeding",
+      "recommendation": "Use with caution, consider gastroprotection"
+    },
+    {
+      "medications": ["Levothyroxine", "Calcium supplements"],
+      "severity": "Minor",
+      "effect": "Decreased levothyroxine absorption",
+      "recommendation": "Separate administration by at least 4 hours"
+    }
+  ]
+}

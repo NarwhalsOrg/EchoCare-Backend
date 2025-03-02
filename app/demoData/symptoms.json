@@ -1,0 +1,202 @@
+{
+  "fever": [
+    {
+      "condition": "Influenza",
+      "confidence": 0.85,
+      "severity": 4,
+      "description": "Viral infection that attacks your respiratory system"
+    },
+    {
+      "condition": "COVID-19",
+      "confidence": 0.80,
+      "severity": 6,
+      "description": "Respiratory illness caused by the SARS-CoV-2 virus"
+    },
+    {
+      "condition": "Pneumonia",
+      "confidence": 0.65,
+      "severity": 7,
+      "description": "Infection that inflames air sacs in one or both lungs"
+    }
+  ],
+  "headache": [
+    {
+      "condition": "Migraine",
+      "confidence": 0.75,
+      "severity": 4,
+      "description": "Recurring headache that causes moderate to severe pain"
+    },
+    {
+      "condition": "Tension Headache",
+      "confidence": 0.70,
+      "severity": 3,
+      "description": "Most common type of headache that feels like pressure around the head"
+    },
+    {
+      "condition": "Sinusitis",
+      "confidence": 0.60,
+      "severity": 3,
+      "description": "Inflammation of the sinuses"
+    }
+  ],
+  "chest pain": [
+    {
+      "condition": "Angina",
+      "confidence": 0.70,
+      "severity": 7,
+      "description": "Reduced blood flow to the heart muscle"
+    },
+    {
+      "condition": "Myocardial Infarction",
+      "confidence": 0.65,
+      "severity": 10,
+      "description": "Heart attack caused by blocked blood flow to the heart"
+    },
+    {
+      "condition": "GERD",
+      "confidence": 0.60,
+      "severity": 4,
+      "description": "Gastroesophageal reflux disease causing acid reflux"
+    }
+  ],
+  "shortness of breath": [
+    {
+      "condition": "Asthma",
+      "confidence": 0.80,
+      "severity": 6,
+      "description": "Condition that affects the airways in the lungs"
+    },
+    {
+      "condition": "COPD",
+      "confidence": 0.75,
+      "severity": 7,
+      "description": "Chronic obstructive pulmonary disease"
+    },
+    {
+      "condition": "Heart Failure",
+      "confidence": 0.65,
+      "severity": 8,
+      "description": "Chronic condition where the heart doesn't pump blood as well as it should"
+    }
+  ],
+  "fatigue": [
+    {
+      "condition": "Anemia",
+      "confidence": 0.70,
+      "severity": 4,
+      "description": "Lack of enough healthy red blood cells to carry oxygen"
+    },
+    {
+      "condition": "Hypothyroidism",
+      "confidence": 0.65,
+      "severity": 4,
+      "description": "Underactive thyroid gland"
+    },
+    {
+      "condition": "Depression",
+      "confidence": 0.60,
+      "severity": 5,
+      "description": "Mood disorder causing persistent feeling of sadness"
+    }
+  ],
+  "nausea": [
+    {
+      "condition": "Gastroenteritis",
+      "confidence": 0.75,
+      "severity": 4,
+      "description": "Inflammation of the stomach and intestines"
+    },
+    {
+      "condition": "Food Poisoning",
+      "confidence": 0.70,
+      "severity": 5,
+      "description": "Illness caused by eating contaminated food"
+    },
+    {
+      "condition": "Migraine",
+      "confidence": 0.55,
+      "severity": 4,
+      "description": "Recurring headache that can cause nausea and vomiting"
+    }
+  ],
+  "joint pain": [
+    {
+      "condition": "Osteoarthritis",
+      "confidence": 0.80,
+      "severity": 5,
+      "description": "Degenerative joint disease affecting cartilage"
+    },
+    {
+      "condition": "Rheumatoid Arthritis",
+      "confidence": 0.70,
+      "severity": 6,
+      "description": "Autoimmune disorder affecting the joints"
+    },
+    {
+      "condition": "Gout",
+      "confidence": 0.65,
+      "severity": 5,
+      "description": "Type of arthritis caused by excess uric acid"
+    }
+  ],
+  "rash": [
+    {
+      "condition": "Contact Dermatitis",
+      "confidence": 0.75,
+      "severity": 3,
+      "description": "Skin reaction from contact with allergens or irritants"
+    },
+    {
+      "condition": "Eczema",
+      "confidence": 0.70,
+      "severity": 3,
+      "description": "Condition that makes skin red and itchy"
+    },
+    {
+      "condition": "Psoriasis",
+      "confidence": 0.65,
+      "severity": 4,
+      "description": "Skin condition causing red, itchy, scaly patches"
+    }
+  ],
+  "cough": [
+    {
+      "condition": "Common Cold",
+      "confidence": 0.80,
+      "severity": 2,
+      "description": "Viral infection of the upper respiratory tract"
+    },
+    {
+      "condition": "Bronchitis",
+      "confidence": 0.70,
+      "severity": 4,
+      "description": "Inflammation of the lining of the bronchial tubes"
+    },
+    {
+      "condition": "Pneumonia",
+      "confidence": 0.60,
+      "severity": 7,
+      "description": "Infection that inflames air sacs in one or both lungs"
+    }
+  ],
+  "dizziness": [
+    {
+      "condition": "Vertigo",
+      "confidence": 0.75,
+      "severity": 4,
+      "description": "Sensation of spinning or that the environment is spinning"
+    },
+    {
+      "condition": "Hypotension",
+      "confidence": 0.65,
+      "severity": 5,
+      "description": "Low blood pressure"
+    },
+    {
+      "condition": "Anemia",
+      "confidence": 0.60,
+      "severity": 4,
+      "description": "Lack of enough healthy red blood cells to carry oxygen"
+    }
+  ]
+}
