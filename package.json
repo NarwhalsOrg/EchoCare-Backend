@@ -1,0 +1,13 @@
+{
+  "name": "healthcare-api",
+  "private": true,
+  "scripts": {
+    "start": "python main.py",
+    "dev": "uvicorn app.main:app --reload",
+    "test": "pytest",
+    "lint": "flake8 app"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  }
+}
