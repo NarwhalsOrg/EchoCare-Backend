@@ -28,9 +28,9 @@ A FastAPI backend for a healthcare application with Supabase integration.
 ```
 healthcare-api/
 ├── app/
-│   ├── AItools/              # AI-related tools
+│   ├── services/              # AI-related tools
 │   ├── controllers/          # Business logic
-│   ├── db/                   # Database configuration
+│   ├── core/                 # Database configuration
 │   ├── demoData/             # Demo data for testing
 │   ├── models/               # SQLAlchemy models
 │   ├── routes/               # API endpoints
