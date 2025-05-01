@@ -10,13 +10,15 @@ load_dotenv()
 
 
 DATABASE_URL = URL.create(
-    drivername="postgresql+asyncpg",
+    drivername="mysql+asyncmy",
     username=os.getenv("DATABASE_USER"),
     password=os.getenv("DATABASE_PASSWORD"),
     host=os.getenv("DATABASE_HOST"),
     port=os.getenv("DATABASE_PORT"),
     database=os.getenv("DATABASE_NAME")
 )
+
+
 
 
 
@@ -29,7 +31,7 @@ Base = declarative_base()
 async def init_db():
     async with engine.begin() as conn:
         # Uncomment the following line to drop all tables (be careful in production)
-        # await conn.run_sync(Base.metadata.drop_all)
+        await conn.run_sync(Base.metadata.drop_all)
         await conn.run_sync(Base.metadata.create_all)
 
 
