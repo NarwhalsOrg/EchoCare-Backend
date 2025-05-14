@@ -1,23 +1,31 @@
-# Use a slim Python image for speed and size
-FROM python:3.11-slim
+FROM python:3.12-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
 # Set workdir
 WORKDIR /app
 
-# Install system dependencies for pip and SQLite
-RUN apt-get update && apt-get install -y gcc libpq-dev && rm -rf /var/lib/apt/lists/*
+# Install system dependencies
+RUN apt-get update && apt-get install -y gcc
 
 # Install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
-COPY app ./app
-COPY start.sh .
-COPY .env .
+# Copy app code
+COPY app/ ./app
+COPY app/data/ ./app/data
+COPY start.sh /start.sh
+COPY app/static/ ./static/
 
-# Expose port
+
+
+# Make start.sh executable
+RUN chmod +x /start.sh
+
+# Expose port for Uvicorn
 EXPOSE 8000
 
-# Start the app
-CMD ["bash", "start.sh"]
+CMD ["/start.sh"]
